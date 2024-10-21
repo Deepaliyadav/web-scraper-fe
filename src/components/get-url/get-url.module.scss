@@ -1,0 +1,38 @@
+
+.container {
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .heading {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .input-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .url-input {
+            width: 60%;
+            min-width: 500px;
+            height: 34px;
+            font-size: 15px;
+            padding: 0 10px;
+        }
+        .btn {
+            background: blue;
+            color: #fff;
+            border: 1px solid blue;
+            height: 32px;
+            padding: 0 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+td, th {
+    padding: 5px 10px;
+    text-align: left;
+}
