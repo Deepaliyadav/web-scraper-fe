@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 import style from './get-url.module.scss';
+import { ColumnChart, LineChart, PieChart, StackedChart } from '../charts';
 
 function GetUrl() {
   const [data, setData] = useState();
@@ -31,7 +32,7 @@ function GetUrl() {
         <input
           placeholder='Enter website URL here..'
           className={style['url-input']}
-          onClick={e => setUrl(e?.target?.value)}
+          onChange={e => setUrl(e?.target?.value)}
         />
         <button
           className={style['btn']}
@@ -74,6 +75,10 @@ function GetUrl() {
               })
             }
           </table>
+        <ColumnChart data={data} />ß
+        <LineChart data={data} />
+        <StackedChart data={data} />
+        <PieChart data={data} />
         </div>
       }
     </div>
